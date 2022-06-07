@@ -1,0 +1,5 @@
+aiogram==3.0.0b3
+ipython==8.4.0
+numpy==1.22.4
+omegaconf==2.2.2
+torchaudio==0.11.0
