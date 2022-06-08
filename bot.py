@@ -1,10 +1,10 @@
+import os
 import logging
 from model import get_audio
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import Message, BufferedInputFile
 
-
-TOKEN = ""
+TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 dp = Dispatcher()
 
 logger = logging.getLogger(__name__)
