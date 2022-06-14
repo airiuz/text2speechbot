@@ -24,7 +24,7 @@ async def command_start_handler(message: Message) -> None:
     # and the target chat will be passed to :ref:`aiogram.methods.send_message.SendMessage` method automatically
     # or call API method directly via Bot instance: `bot.send_message(chat_id=message.chat.id, ...)`
 
-    await message.answer(f"Assalomu alaykum, <b>{message.from_user.full_name}!</b>\nMenga habar yuboring va men sizga gapirib beraman.\bMenga ovoz yuboring va men text qilib beraman.")
+    await message.answer(f"Assalomu alaykum, <b>{message.from_user.full_name}!</b>\nMenga habar yuboring va men sizga gapirib beraman.\bMenga ovoz yuboring va men tekst qilib beraman.")
 
     data = get_audio(f"Assalomu alaykum, {message.from_user.full_name}. Menga ovoz yuborsez text qilib beraman. Agar text yuborsez gapirib beraman.")
     audio = Audio(data=data, rate=48000).data
