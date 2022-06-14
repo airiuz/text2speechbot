@@ -26,7 +26,7 @@ async def command_start_handler(message: Message) -> None:
 
     await message.answer(f"Assalomu alaykum, <b>{message.from_user.full_name}!</b>\nMenga habar yuboring va men sizga gapirib beraman.\bMenga ovoz yuboring va men text qilib beraman.")
 
-    data = get_audio(f"Assalomu alaykum, {message.from_user.full_name}. Mening ismim Ezoza. Yahshimisiz?")
+    data = get_audio(f"Assalomu alaykum, {message.from_user.full_name}. Menga ovoz yuborsez text qilib beraman. Agar text yuborsez gapirib beraman.")
     audio = Audio(data=data, rate=48000).data
     audio_file = BufferedInputFile(audio, filename="file.wav")
     await message.answer_voice(audio_file)
